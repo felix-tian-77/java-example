@@ -1,0 +1,46 @@
+# Task Submission API Contract
+
+## Endpoint
+POST /thread-controller/{controllerId}/tasks
+
+## Description
+Submits a new task to the specified thread controller
+
+## Request
+### Path Parameters
+- controllerId: String, required
+
+### Headers
+Content-Type: application/json
+
+### Body
+```json
+{
+  "taskName": "string",
+  "taskData": "object" // Task-specific data
+}
+```
+
+### Field Requirements
+- taskName: Required, non-empty string
+- taskData: Optional, task-specific data
+
+## Response
+### Success (202 Accepted)
+```json
+{
+  "taskId": "string",
+  "status": "string", // "PENDING"
+  "submissionTime": "ISO8601 timestamp"
+}
+```
+
+### Errors
+- 400 Bad Request: Missing required fields
+- 404 Not Found: Controller not found
+- 409 Conflict: Controller is in shutdown state
+
+## CLI Interface
+```bash
+thread-control submit-task --controller-id &lt;id&gt; --task-name &lt;name&gt; [--task-data &lt;data&gt;]
+```
