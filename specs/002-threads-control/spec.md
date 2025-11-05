@@ -9,6 +9,16 @@
 
 ## User Scenarios & Testing *(mandatory)*
 
+## Clarifications
+
+### Session 2025-11-05
+
+- Q: What type of storage should be used for the thread controller? → A: In-memory storage only - All data is kept in memory during program execution with no persistence after shutdown
+- Q: What type of tasks should the thread controller support? → A: Generic task support - Support standard Java Runnable and Callable interfaces for maximum flexibility
+- Q: What thread pool sizing behavior should be supported? → A: Dynamic thread pool sizing - Pool can grow and shrink based on workload demands
+- Q: What level of exception handling should be implemented? → A: Comprehensive exception handling - Detailed error reporting, exception categorization, and configurable error handling strategies
+- Q: What level of monitoring and metrics should be provided? → A: Built-in monitoring with standard metrics - Provide built-in counters, timing metrics, and health checks
+
 ### User Story 1 - Thread Pool Management (Priority: P1)
 
 As a developer, I want to create a thread controller that can manage a pool of threads so that I can efficiently execute multiple tasks concurrently.
@@ -64,19 +74,19 @@ As a developer, I want to be able to stop all threads gracefully and ensure reso
 
 ### Functional Requirements
 
-- **FR-001**: System MUST allow creation of a thread controller with configurable pool size
+- **FR-001**: System MUST allow creation of a thread controller with configurable pool size and support dynamic resizing based on workload
 - **FR-002**: System MUST support both traditional threads and virtual threads, with traditional threads as the default and a configuration option to switch to virtual threads
 - **FR-003**: Users MUST be able to submit tasks to the thread controller for asynchronous execution
 - **FR-004**: System MUST provide a mechanism to gracefully shutdown all threads
 - **FR-005**: System MUST ensure all resources are properly released when threads are stopped
 - **FR-006**: System MUST prevent new tasks from being submitted after shutdown is initiated
-- **FR-007**: System MUST handle task exceptions without crashing the controller
-- **FR-008**: System MUST provide status information about running threads and queued tasks
+- **FR-007**: System MUST handle task exceptions comprehensively with detailed error reporting and categorization without crashing the controller
+- **FR-008**: System MUST provide comprehensive status information including metrics, counters, and health checks for running threads and queued tasks
 
 ### Key Entities *(include if feature involves data)*
 
 - **ThreadController**: Manages a pool of threads and controls their execution
-- **Task**: A unit of work that can be executed by the thread controller
+- **Task**: A unit of work that can be executed by the thread controller (supports Runnable and Callable interfaces)
 - **ThreadPool**: A collection of threads managed by the controller
 
 ## Success Criteria *(mandatory)*
