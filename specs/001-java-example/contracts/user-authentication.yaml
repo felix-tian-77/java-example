@@ -1,0 +1,42 @@
+# User Authentication API Contract
+
+## Endpoint
+POST /login
+
+## Description
+Authenticates a user and provides access token
+
+## Request
+### Headers
+Content-Type: application/json
+
+### Body
+```json
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+### Field Requirements
+- email: Required, valid email format
+- password: Required
+
+## Response
+### Success (200 OK)
+```json
+{
+  "token": "string",
+  "expiresAt": "ISO8601 timestamp",
+  "userId": "string"
+}
+```
+
+### Errors
+- 400 Bad Request: Missing or invalid credentials
+- 401 Unauthorized: Invalid email or password
+
+## CLI Interface
+```bash
+user-management login --email &lt;email&gt; --password &lt;password&gt;
+```

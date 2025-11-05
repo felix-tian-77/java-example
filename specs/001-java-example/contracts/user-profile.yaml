@@ -1,0 +1,62 @@
+# User Profile Management API Contract
+
+## Endpoints
+GET /profile/{userId}
+PUT /profile/{userId}
+
+## Description
+Retrieves and updates user profile information
+
+## GET Request
+### Path Parameters
+- userId: String, required
+
+### Response
+#### Success (200 OK)
+```json
+{
+  "userId": "string",
+  "email": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "createdAt": "ISO8601 timestamp",
+  "lastLoginAt": "ISO8601 timestamp"
+}
+```
+
+#### Errors
+- 404 Not Found: User not found
+
+## PUT Request
+### Path Parameters
+- userId: String, required
+
+### Body
+```json
+{
+  "firstName": "string",
+  "lastName": "string"
+}
+```
+
+### Response
+#### Success (200 OK)
+```json
+{
+  "userId": "string",
+  "email": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "updatedAt": "ISO8601 timestamp"
+}
+```
+
+#### Errors
+- 400 Bad Request: Invalid input data
+- 404 Not Found: User not found
+
+## CLI Interface
+```bash
+user-management get-profile --user-id &lt;userId&gt;
+user-management update-profile --user-id &lt;userId&gt; --first-name &lt;firstName&gt; [--last-name &lt;lastName&gt;]
+```
