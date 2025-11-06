@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.007" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/opt/java/jdk-25.0.1/lib"/>
+    <property name="sun.java.command" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106090406279_3.jar /data/workspace/java-example/target/surefire 2025-11-06T09-04-06_248-jvmRun1 surefire-20251106090406279_1tmp surefire_0-20251106090406279_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/felixtian"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/java/jdk-25.0.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/data/workspace/java-example"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106090406279_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-27"/>
+    <property name="user.name" value="felixtian"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-34-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/data/repos/m2"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/data/workspace/java-example"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-27"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testTaskStatusEnumValues" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.151347567Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.151415066Z] [main] [DEBUG] [Task] Created new task with ID: eb441c4b-60b2-4166-950b-eb40af11770f
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadControllerCounters" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.151907872Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.151937843Z] [main] [DEBUG] [Task] Created new task with ID: 81a35692-1d35-4e32-9ae3-fb7d07431c5f
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadControllerShutdown" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.152377935Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.152425665Z] [main] [DEBUG] [Task] Created new task with ID: 71dd2da7-b7c0-458f-8b3b-211795e8a607
+[2025-11-06T01:04:07.152486341Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidTaskStateTransitions" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.152825125Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.152866615Z] [main] [DEBUG] [Task] Created new task with ID: 5c394209-9f56-41f4-967d-975b9290703a
+[2025-11-06T01:04:07.152933183Z] [main] [DEBUG] [Task] Task 5c394209-9f56-41f4-967d-975b9290703a status changed to RUNNING
+[2025-11-06T01:04:07.152948261Z] [main] [DEBUG] [Task] Task 5c394209-9f56-41f4-967d-975b9290703a status changed to COMPLETED
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadPoolConfigurationConstructor" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.153652165Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.153694005Z] [main] [DEBUG] [Task] Created new task with ID: ee035141-3aa4-4c3a-adb4-2278e6332733
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadControllerInitialState" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.154115218Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.154155261Z] [main] [DEBUG] [Task] Created new task with ID: 94074212-2eeb-49ab-ae5a-927aa7a84dd7
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskEquality" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.154694778Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.154726206Z] [main] [DEBUG] [Task] Created new task with ID: 7c441bae-abf5-46bb-9945-2fa2391737eb
+[2025-11-06T01:04:07.154795117Z] [main] [DEBUG] [Task] Created new task with ID: test-id
+[2025-11-06T01:04:07.154807817Z] [main] [DEBUG] [Task] Created new task with ID: test-id
+[2025-11-06T01:04:07.154822196Z] [main] [DEBUG] [Task] Created new task with ID: different-id
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadPoolConfigurationDefaultValues" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.155403610Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.155444394Z] [main] [DEBUG] [Task] Created new task with ID: af8ed95d-478b-4478-aa14-bad591d1e34c
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskStateTransitions" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.155898770Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.155939655Z] [main] [DEBUG] [Task] Created new task with ID: 4c0abd83-8b9b-446a-a5f2-7b55b27da246
+[2025-11-06T01:04:07.156010935Z] [main] [DEBUG] [Task] Task 4c0abd83-8b9b-446a-a5f2-7b55b27da246 status changed to RUNNING
+[2025-11-06T01:04:07.156028446Z] [main] [DEBUG] [Task] Task 4c0abd83-8b9b-446a-a5f2-7b55b27da246 status changed to COMPLETED
+[2025-11-06T01:04:07.156062022Z] [main] [DEBUG] [Task] Created new task with ID: 25ec4aeb-8b49-40a5-b91f-dcc6a4f4bee3
+[2025-11-06T01:04:07.156079798Z] [main] [DEBUG] [Task] Task 25ec4aeb-8b49-40a5-b91f-dcc6a4f4bee3 status changed to RUNNING
+[2025-11-06T01:04:07.156094252Z] [main] [DEBUG] [Task] Task 25ec4aeb-8b49-40a5-b91f-dcc6a4f4bee3 status changed to FAILED
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskInitialState" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.156456040Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.156498430Z] [main] [DEBUG] [Task] Created new task with ID: 4872f9b9-c85a-4708-9fa6-a0d5c54c3301
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadPoolConfigurationValidation" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:07.156888288Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.156915132Z] [main] [DEBUG] [Task] Created new task with ID: 788c63a5-2cb3-46f7-ab10-7f000833f47d
+]]></system-out>
+  </testcase>
+  <testcase name="testThreadTypeEnumValues" classname="com.example.threadcontroller.model.ThreadControllerModelTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:07.157715803Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.157762649Z] [main] [DEBUG] [Task] Created new task with ID: f072d267-9c5c-493e-97d0-37938cd087e3
+]]></system-out>
+  </testcase>
+</testsuite>

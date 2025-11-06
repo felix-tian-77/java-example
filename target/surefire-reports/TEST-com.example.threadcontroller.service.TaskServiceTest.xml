@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.threadcontroller.service.TaskServiceTest" time="0.635" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/opt/java/jdk-25.0.1/lib"/>
+    <property name="sun.java.command" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106090406279_3.jar /data/workspace/java-example/target/surefire 2025-11-06T09-04-06_248-jvmRun1 surefire-20251106090406279_1tmp surefire_0-20251106090406279_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/felixtian"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/java/jdk-25.0.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/data/workspace/java-example"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106090406279_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-27"/>
+    <property name="user.name" value="felixtian"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-34-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/data/repos/m2"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/data/workspace/java-example"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-27"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testTaskExecutionServiceWithCallable" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.066">
+    <system-out><![CDATA[[2025-11-06T01:04:06.516550308Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.516728767Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.516769603Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.516825025Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.516999579Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.517019366Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.527936016Z] [main] [DEBUG] [Task] Created new task with ID: 6d3b4c15-9dec-4943-9b61-93943d1a88d1
+[2025-11-06T01:04:06.529186610Z] [main] [INFO] [TaskExecutionService] Executing Callable task with ID: 6d3b4c15-9dec-4943-9b61-93943d1a88d1
+[2025-11-06T01:04:06.529446872Z] [main] [DEBUG] [MetricsCollector] Recorded task submission. Task type: Callable, Total submitted: 1
+[2025-11-06T01:04:06.529530767Z] [main] [DEBUG] [Task] Task 6d3b4c15-9dec-4943-9b61-93943d1a88d1 status changed to RUNNING
+[2025-11-06T01:04:06.531361489Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [TaskExecutionService] Running Callable task with ID: 6d3b4c15-9dec-4943-9b61-93943d1a88d1
+Starting callable task: callable-execution-test
+Completed callable task: callable-execution-test
+[2025-11-06T01:04:06.581987455Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [Task] Task 6d3b4c15-9dec-4943-9b61-93943d1a88d1 status changed to COMPLETED
+[2025-11-06T01:04:06.582141847Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [MetricsCollector] Recorded task completion. Execution time: 52ms, Total completed: 1
+[2025-11-06T01:04:06.582201218Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [TaskExecutionService] Callable task with ID: 6d3b4c15-9dec-4943-9b61-93943d1a88d1 completed successfully in 52ms
+[2025-11-06T01:04:06.582633874Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.582682485Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.582779961Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testSubmitRunnableTask" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.103">
+    <system-out><![CDATA[[2025-11-06T01:04:06.583876039Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.583945452Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.583996469Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.584027271Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.584056660Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.584102375Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.584811284Z] [main] [INFO] [ThreadControllerService] Submitting task. Total submitted tasks: 1
+Starting task: test-task
+Completed task: test-task
+[2025-11-06T01:04:06.685656119Z] [platform-thread-0] [INFO] [ThreadControllerService] Task completed. Total completed tasks: 1
+[2025-11-06T01:04:06.685976062Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.686020667Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.686095351Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskExecutionService" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.052">
+    <system-out><![CDATA[[2025-11-06T01:04:06.686862037Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.686906578Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.686933071Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.686948373Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.686964137Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.686976105Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.687139441Z] [main] [DEBUG] [Task] Created new task with ID: f16a4a53-67be-41fb-a9d4-5c37563b4de1
+[2025-11-06T01:04:06.687171667Z] [main] [INFO] [TaskExecutionService] Executing Runnable task with ID: f16a4a53-67be-41fb-a9d4-5c37563b4de1
+[2025-11-06T01:04:06.687205431Z] [main] [DEBUG] [MetricsCollector] Recorded task submission. Task type: Runnable, Total submitted: 1
+[2025-11-06T01:04:06.687231217Z] [main] [DEBUG] [Task] Task f16a4a53-67be-41fb-a9d4-5c37563b4de1 status changed to RUNNING
+[2025-11-06T01:04:06.687635594Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [TaskExecutionService] Running Runnable task with ID: f16a4a53-67be-41fb-a9d4-5c37563b4de1
+Starting task: execution-test
+Completed task: execution-test
+[2025-11-06T01:04:06.737773769Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [Task] Task f16a4a53-67be-41fb-a9d4-5c37563b4de1 status changed to COMPLETED
+[2025-11-06T01:04:06.737822252Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [MetricsCollector] Recorded task completion. Execution time: 50ms, Total completed: 1
+[2025-11-06T01:04:06.737853736Z] [ForkJoinPool.commonPool-worker-1] [DEBUG] [TaskExecutionService] Runnable task with ID: f16a4a53-67be-41fb-a9d4-5c37563b4de1 completed successfully in 50ms
+[2025-11-06T01:04:06.738033912Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.738071702Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.738146648Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskSubmissionValidator" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:06.738952776Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.739000677Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.739028558Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.739044890Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.739060797Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.739072012Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.739507566Z] [main] [DEBUG] [TaskSubmissionValidator] Task submission parameters validated successfully: name=test-task, duration=1000, poolSize=5
+[2025-11-06T01:04:06.739750154Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.739772831Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.739808978Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testSubmitTaskAfterShutdown" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T01:04:06.740236498Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.740275133Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.740302714Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.740318199Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.740332262Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.740344327Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.740423037Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.740439055Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.740636454Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskQueueManagerWithTimeout" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.101">
+    <system-out><![CDATA[[2025-11-06T01:04:06.741034137Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.741068649Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.741100997Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.741116455Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.741129868Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.741141825Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.741219764Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with bounded queue of capacity: 10
+[2025-11-06T01:04:06.841419885Z] [main] [DEBUG] [Task] Created new task with ID: a7aa002f-b016-468e-9424-136db2b7d59f
+[2025-11-06T01:04:06.841511511Z] [main] [DEBUG] [TaskQueueManager] Added task with ID: a7aa002f-b016-468e-9424-136db2b7d59f to queue. Queue size: 1
+[2025-11-06T01:04:06.841544185Z] [main] [DEBUG] [TaskQueueManager] Polled task with ID: a7aa002f-b016-468e-9424-136db2b7d59f from queue. Remaining queue size: 0
+[2025-11-06T01:04:06.841735742Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.841756140Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.841804167Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskAdapter" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:06.842445432Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.842487835Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.842512524Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.842528677Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.842542869Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.842557330Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.842966158Z] [main] [DEBUG] [Task] Created new task with ID: a825e203-f496-45e9-b4db-cfedb82f48e2
+[2025-11-06T01:04:06.842994344Z] [main] [DEBUG] [TaskAdapter] Created Task model from Runnable
+[2025-11-06T01:04:06.843177569Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.843200031Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.843240500Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskSubmissionServiceCreation" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:06.843702962Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.843740108Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.843765821Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.843781017Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.843795612Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.843807279Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.843914204Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.843930680Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.843960959Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskResultHandlerWithException" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.101">
+    <system-out><![CDATA[[2025-11-06T01:04:06.844334100Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.844370076Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.844395776Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.844413852Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.844427507Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.844439316Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.844546132Z] [main] [DEBUG] [Task] Created new task with ID: 22413fe1-6b7a-4cda-95dc-5bcea00b6fd7
+[2025-11-06T01:04:06.844871511Z] [main] [ERROR] [TaskResultHandler] Task with ID: 22413fe1-6b7a-4cda-95dc-5bcea00b6fd7 failed with exception: Test exception
+[2025-11-06T01:04:06.945254849Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.945310187Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.945374098Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskQueueManager" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T01:04:06.945987074Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.946039772Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.946063691Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.946084358Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.946099179Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.946114089Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.946265440Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with bounded queue of capacity: 10
+[2025-11-06T01:04:06.946327249Z] [main] [DEBUG] [Task] Created new task with ID: 3df91c4e-24f5-46b9-90b7-141ce8ab42d5
+[2025-11-06T01:04:06.946513585Z] [main] [DEBUG] [Task] Created new task with ID: 42e4e949-656e-4e89-b8d9-9fa4d0eb14bc
+[2025-11-06T01:04:06.946562140Z] [main] [DEBUG] [TaskQueueManager] Added task with ID: 3df91c4e-24f5-46b9-90b7-141ce8ab42d5 to queue. Queue size: 1
+[2025-11-06T01:04:06.946589208Z] [main] [DEBUG] [TaskQueueManager] Added task with ID: 42e4e949-656e-4e89-b8d9-9fa4d0eb14bc to queue. Queue size: 2
+[2025-11-06T01:04:06.946647558Z] [main] [DEBUG] [TaskQueueManager] Took task with ID: 3df91c4e-24f5-46b9-90b7-141ce8ab42d5 from queue. Remaining queue size: 1
+[2025-11-06T01:04:06.946671955Z] [main] [DEBUG] [TaskQueueManager] Took task with ID: 42e4e949-656e-4e89-b8d9-9fa4d0eb14bc from queue. Remaining queue size: 0
+[2025-11-06T01:04:06.946751791Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:06.946767275Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:06.946798717Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskResultHandler" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.101">
+    <system-out><![CDATA[[2025-11-06T01:04:06.947313891Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.947352359Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:06.947376453Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:06.947394916Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:06.947408447Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:06.947419554Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:06.947554089Z] [main] [DEBUG] [Task] Created new task with ID: b9f78296-9498-4a82-b09a-615824447dbf
+[2025-11-06T01:04:06.947583598Z] [main] [DEBUG] [TaskResultHandler] Task with ID: b9f78296-9498-4a82-b09a-615824447dbf completed successfully with result: test-result
+[2025-11-06T01:04:07.047799230Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:07.047867496Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:07.047930113Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+  <testcase name="testSubmitCallableTask" classname="com.example.threadcontroller.service.TaskServiceTest" time="0.102">
+    <system-out><![CDATA[[2025-11-06T01:04:07.048483356Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.048529432Z] [main] [INFO] [ThreadControllerService] Initialized platform thread executor with pool size: 5
+[2025-11-06T01:04:07.048558790Z] [main] [INFO] [ThreadControllerService] Created ThreadControllerService with configuration: ThreadPoolConfiguration{corePoolSize=5, maximumPoolSize=5, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T01:04:07.048603340Z] [main] [INFO] [TaskQueueManager] Created TaskQueueManager with unbounded queue
+[2025-11-06T01:04:07.048649769Z] [main] [INFO] [MetricsCollector] MetricsCollector initialized
+[2025-11-06T01:04:07.048665704Z] [main] [INFO] [TaskExecutionService] Created TaskExecutionService
+[2025-11-06T01:04:07.048906864Z] [main] [INFO] [ThreadControllerService] Submitting callable task. Total submitted tasks: 1
+Starting callable task: test-callable
+Completed callable task: test-callable
+[2025-11-06T01:04:07.149451517Z] [platform-thread-0] [INFO] [ThreadControllerService] Callable task completed. Total completed tasks: 1
+[2025-11-06T01:04:07.149823851Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T01:04:07.149874605Z] [main] [INFO] [ThreadControllerService] Initiating graceful shutdown
+[2025-11-06T01:04:07.149947253Z] [main] [INFO] [TaskQueueManager] TaskQueueManager shutdown initiated. Cleared queue of 0 tasks
+]]></system-out>
+  </testcase>
+</testsuite>

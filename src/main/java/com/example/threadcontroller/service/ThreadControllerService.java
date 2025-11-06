@@ -5,7 +5,6 @@ import com.example.threadcontroller.model.ThreadPoolConfiguration;
 import com.example.threadcontroller.model.ThreadType;
 import com.example.threadcontroller.util.Logger;
 import com.example.threadcontroller.util.ShutdownException;
-import com.example.threadcontroller.util.TaskExecutionException;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
@@ -19,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ThreadControllerService {
     private static final Logger logger = new Logger(ThreadControllerService.class);
 
-    private ThreadController controller;
+    private final ThreadController controller;
     private ExecutorService executorService;
     private final Object lock = new Object();
 
