@@ -58,7 +58,7 @@ All components must be observable through structured logging and metrics; Use se
 ## Governance
 
 ### Amendment Procedure
-This Constitution supersedes all other practices; Amendments require documentation, approval, and migration plan. All team members must be notified of changes within 48 hours of ratification.
+This Constitution supersedes all other practices; Amendments require documentation, approval, and migration plan. All team members must be notified of changes within 48 hours of ratification./sp
 
 ### Compliance Review
 All PRs/reviews must verify compliance with these principles; Complexity must be justified with architectural documentation; Use this document for runtime development guidance and decision-making.
