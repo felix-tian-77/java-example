@@ -67,28 +67,29 @@ public class ThreadControllerModelTest {
         assertDoesNotThrow(() -> config.validate());
 
         // Invalid core pool size
-        config.setCorePoolSize(-1);
-        assertThrows(IllegalArgumentException.class, () -> config.validate());
-        config.setCorePoolSize(10); // Reset to valid value
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ThreadPoolConfiguration(-1, 20, 60, TimeUnit.SECONDS, ThreadType.PLATFORM);
+        });
 
         // Invalid maximum pool size
-        config.setMaximumPoolSize(5); // Less than core pool size
-        assertThrows(IllegalArgumentException.class, () -> config.validate());
-        config.setMaximumPoolSize(20); // Reset to valid value
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ThreadPoolConfiguration(10, 5, 60, TimeUnit.SECONDS, ThreadType.PLATFORM);
+        });
 
         // Invalid keep alive time
-        config.setKeepAliveTime(-1);
-        assertThrows(IllegalArgumentException.class, () -> config.validate());
-        config.setKeepAliveTime(60); // Reset to valid value
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ThreadPoolConfiguration(10, 20, -1, TimeUnit.SECONDS, ThreadType.PLATFORM);
+        });
 
         // Null time unit
-        config.setTimeUnit(null);
-        assertThrows(IllegalArgumentException.class, () -> config.validate());
-        config.setTimeUnit(TimeUnit.SECONDS); // Reset to valid value
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ThreadPoolConfiguration(10, 20, 60, null, ThreadType.PLATFORM);
+        });
 
         // Null thread type
-        config.setThreadType(null);
-        assertThrows(IllegalArgumentException.class, () -> config.validate());
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ThreadPoolConfiguration(10, 20, 60, TimeUnit.SECONDS, null);
+        });
     }
 
     @Test

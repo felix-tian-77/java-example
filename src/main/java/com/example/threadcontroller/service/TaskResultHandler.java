@@ -27,7 +27,10 @@ public class TaskResultHandler {
             if (throwable != null) {
                 logger.error("Task with ID: {} failed with exception: {}",
                            taskModel.getId(), throwable.getMessage(), throwable);
-                taskModel.setException(throwable);
+                // Convert Throwable to Exception if necessary
+                Exception exception = (throwable instanceof Exception) ?
+                    (Exception) throwable : new RuntimeException(throwable);
+                taskModel.setException(exception);
             } else {
                 logger.debug("Task with ID: {} completed successfully with result: {}",
                            taskModel.getId(), result);
@@ -46,11 +49,14 @@ public class TaskResultHandler {
      */
     public static <T> void handleResult(CompletableFuture<T> future,
                                       Consumer<T> onSuccess,
-                                      Consumer<Throwable> onFailure) {
+                                      Consumer<Exception> onFailure) {
         future.whenComplete((result, throwable) -> {
             if (throwable != null) {
                 logger.error("Task failed with exception: {}", throwable.getMessage(), throwable);
-                onFailure.accept(throwable);
+                // Convert Throwable to Exception if necessary
+                Exception exception = (throwable instanceof Exception) ?
+                    (Exception) throwable : new RuntimeException(throwable);
+                onFailure.accept(exception);
             } else {
                 logger.debug("Task completed successfully with result: {}", result);
                 onSuccess.accept(result);
