@@ -1,0 +1,48 @@
+# Status Query API Contract
+
+## Endpoint
+GET /thread-controller/{controllerId}/status
+
+## Description
+Retrieves the current status of the specified thread controller
+
+## Request
+### Path Parameters
+- controllerId: String, required
+
+### Query Parameters
+- includeTasks: Boolean, optional - Whether to include task details
+
+## Response
+### Success (200 OK)
+```json
+{
+  "controllerId": "string",
+  "status": "string", // "ACTIVE", "SHUTDOWN_INITIATED", or "TERMINATED"
+  "poolSize": "integer",
+  "threadType": "string", // "PLATFORM" or "VIRTUAL"
+  "submittedTasks": "integer",
+  "completedTasks": "integer",
+  "failedTasks": "integer",
+  "runningTasks": "integer",
+  "pendingTasks": "integer",
+  "tasks": [ // Included only if includeTasks=true
+    {
+      "taskId": "string",
+      "taskName": "string",
+      "status": "string", // "PENDING", "RUNNING", "COMPLETED", "FAILED"
+      "submissionTime": "ISO8601 timestamp",
+      "startTime": "ISO8601 timestamp", // null if not started
+      "completionTime": "ISO8601 timestamp" // null if not completed
+    }
+  ]
+}
+```
+
+### Errors
+- 404 Not Found: Controller not found
+
+## CLI Interface
+```bash
+thread-control get-status --controller-id &lt;id&gt; [--include-tasks]
+```

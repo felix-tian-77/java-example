@@ -1,0 +1,49 @@
+# Graceful Shutdown API Contract
+
+## Endpoint
+POST /thread-controller/{controllerId}/shutdown
+
+## Description
+Initiates graceful shutdown of the specified thread controller
+
+## Request
+### Path Parameters
+- controllerId: String, required
+
+### Headers
+Content-Type: application/json
+
+### Body
+```json
+{
+  "awaitTermination": "boolean", // Whether to wait for tasks to complete
+  "timeout": "integer", // Maximum time to wait (if awaitTermination is true)
+  "timeUnit": "string" // Time unit for timeout (if awaitTermination is true)
+}
+```
+
+### Field Requirements
+- awaitTermination: Optional, defaults to true
+- timeout: Optional, defaults to 60
+- timeUnit: Optional, defaults to "SECONDS"
+
+## Response
+### Success (200 OK)
+```json
+{
+  "controllerId": "string",
+  "status": "string", // "SHUTDOWN_INITIATED" or "TERMINATED"
+  "shutdownTime": "ISO8601 timestamp",
+  "completedTasks": "integer",
+  "failedTasks": "integer"
+}
+```
+
+### Errors
+- 404 Not Found: Controller not found
+- 409 Conflict: Shutdown already initiated
+
+## CLI Interface
+```bash
+thread-control shutdown --controller-id &lt;id&gt; [--await-termination] [--timeout &lt;time&gt;] [--time-unit &lt;unit&gt;]
+```

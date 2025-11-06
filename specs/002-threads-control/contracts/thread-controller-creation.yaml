@@ -1,0 +1,47 @@
+# Thread Controller Creation API Contract
+
+## Endpoint
+POST /thread-controller
+
+## Description
+Creates a new thread controller with specified configuration
+
+## Request
+### Headers
+Content-Type: application/json
+
+### Body
+```json
+{
+  "poolSize": "integer",
+  "threadType": "string", // "PLATFORM" or "VIRTUAL"
+  "keepAliveTime": "integer",
+  "timeUnit": "string" // "SECONDS", "MILLISECONDS", etc.
+}
+```
+
+### Field Requirements
+- poolSize: Required, positive integer
+- threadType: Optional, defaults to "PLATFORM"
+- keepAliveTime: Optional, defaults to 60
+- timeUnit: Optional, defaults to "SECONDS"
+
+## Response
+### Success (201 Created)
+```json
+{
+  "controllerId": "string",
+  "poolSize": "integer",
+  "threadType": "string",
+  "status": "string" // "ACTIVE"
+}
+```
+
+### Errors
+- 400 Bad Request: Invalid configuration parameters
+- 409 Conflict: Controller with same ID already exists
+
+## CLI Interface
+```bash
+thread-control create --pool-size &lt;size&gt; [--thread-type &lt;type&gt;] [--keep-alive &lt;time&gt;] [--time-unit &lt;unit&gt;]
+```

@@ -1,0 +1,15 @@
+# Build output
+target/
+
+# IDE files
+*.iml
+*.iws
+*.ipr
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

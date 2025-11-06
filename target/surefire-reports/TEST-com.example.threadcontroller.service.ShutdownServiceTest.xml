@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.threadcontroller.service.ShutdownServiceTest" time="0.045" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/opt/java/jdk-25.0.1/lib"/>
+    <property name="sun.java.command" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106104745385_3.jar /data/workspace/java-example/target/surefire 2025-11-06T10-47-45_354-jvmRun1 surefire-20251106104745385_1tmp surefire_0-20251106104745385_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/data/workspace/java-example/target/test-classes:/data/workspace/java-example/target/classes:/data/repos/m2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/data/repos/m2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/data/repos/m2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/data/repos/m2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/data/repos/m2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/data/repos/m2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/felixtian"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/java/jdk-25.0.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/data/workspace/java-example"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="checkstyle.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/data/workspace/java-example/target/surefire/surefirebooter-20251106104745385_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-27"/>
+    <property name="user.name" value="felixtian"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-34-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/data/repos/m2"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/data/workspace/java-example"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-27"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testShutdownValidator" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.016">
+    <system-out><![CDATA[[2025-11-06T02:47:45.599057259Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.599989675Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.600160704Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.600332466Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.600588975Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.600763142Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.602527637Z] [main] [DEBUG] [ShutdownValidator] Shutdown timeouts validated successfully: shutdown=5 SECONDS, termination=5 SECONDS
+[2025-11-06T02:47:45.602794793Z] [main] [DEBUG] [ShutdownValidator] Timeout validated successfully: 10 SECONDS
+]]></system-out>
+  </testcase>
+  <testcase name="testShutdownServiceShutdown" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.004">
+    <system-out><![CDATA[[2025-11-06T02:47:45.607288635Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.607531107Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.607781652Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.607926296Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.608111965Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.608268065Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.608717286Z] [main] [INFO] [ShutdownService] Initiating graceful shutdown with timeout: 5 SECONDS
+[2025-11-06T02:47:45.608907718Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T02:47:45.609066764Z] [main] [INFO] [ShutdownService] Executor service shutdown initiated
+[2025-11-06T02:47:45.609209581Z] [main] [INFO] [ShutdownService] Awaiting termination with timeout: 5 SECONDS
+[2025-11-06T02:47:45.609362611Z] [main] [INFO] [ShutdownService] Executor service terminated successfully
+[2025-11-06T02:47:45.609537756Z] [main] [INFO] [ResourceCleanupService] Cleaning up 0 registered resources
+[2025-11-06T02:47:45.609715380Z] [main] [INFO] [ResourceCleanupService] Cleaned up 0 out of 0 resources
+[2025-11-06T02:47:45.609844217Z] [main] [INFO] [ShutdownService] Graceful shutdown completed. Terminated: true
+]]></system-out>
+  </testcase>
+  <testcase name="testResourceCleanupService" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.002">
+    <system-out><![CDATA[[2025-11-06T02:47:45.610961510Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.611153714Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.611241068Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.611308614Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.611423947Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.611502758Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.611707648Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.612090597Z] [main] [DEBUG] [ResourceCleanupService] Registered resource for cleanup: test-resource
+[2025-11-06T02:47:45.612177856Z] [main] [DEBUG] [ResourceCleanupService] Unregistered resource from cleanup: test-resource
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskCompletionTrackerShutdownBehavior" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.613189422Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.613276184Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.613315575Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.613356897Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.613393722Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.613436480Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.613581613Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.613649190Z] [main] [INFO] [TaskCompletionTracker] Shutdown initiated flag set to: true
+[2025-11-06T02:47:45.613703744Z] [main] [WARN] [TaskCompletionTracker] Cannot register task task-1 - shutdown has been initiated
+]]></system-out>
+  </testcase>
+  <testcase name="testGracefulShutdown" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.007">
+    <system-out><![CDATA[[2025-11-06T02:47:45.614418942Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.614463082Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.614489705Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.614514297Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.614539487Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.614560004Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.614662737Z] [main] [INFO] [GracefulShutdownHandler] Initiating two-phase graceful shutdown
+[2025-11-06T02:47:45.614714196Z] [main] [INFO] [GracefulShutdownHandler] Performing shutdown phase with timeout: 2 SECONDS
+[2025-11-06T02:47:45.614738882Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T02:47:45.614770037Z] [main] [INFO] [TaskCompletionTracker] Shutdown initiated flag set to: true
+[2025-11-06T02:47:45.614803715Z] [main] [INFO] [GracefulShutdownHandler] Executor service shutdown initiated
+[2025-11-06T02:47:45.614844150Z] [main] [INFO] [GracefulShutdownHandler] Performing await termination phase with timeout: 2 SECONDS
+[2025-11-06T02:47:45.614871938Z] [main] [INFO] [GracefulShutdownHandler] Executor service terminated successfully
+[2025-11-06T02:47:45.614902586Z] [main] [INFO] [ResourceCleanupService] Cleaning up 0 registered resources
+[2025-11-06T02:47:45.614948850Z] [main] [INFO] [ResourceCleanupService] Cleaned up 0 out of 0 resources
+[2025-11-06T02:47:45.621393016Z] [main] [INFO] [GracefulShutdownHandler] Two-phase graceful shutdown completed. Result: ShutdownResult{shutdownSuccess=true, terminationSuccess=true, cleanedResources=0, message='Shutdown completed in 0 ms'}
+]]></system-out>
+  </testcase>
+  <testcase name="testShutdownServiceShutdownNow" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.622176559Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.622221863Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.622253250Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.622269077Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.622284818Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.622298787Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.622471904Z] [main] [INFO] [ShutdownService] Initiating immediate shutdown
+[2025-11-06T02:47:45.622493981Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T02:47:45.622552808Z] [main] [INFO] [ShutdownService] Executor service shutdownNow initiated
+[2025-11-06T02:47:45.622580192Z] [main] [INFO] [ResourceCleanupService] Cleaning up 0 registered resources
+[2025-11-06T02:47:45.622612024Z] [main] [INFO] [ResourceCleanupService] Cleaned up 0 out of 0 resources
+[2025-11-06T02:47:45.622630682Z] [main] [INFO] [ShutdownService] Immediate shutdown completed
+]]></system-out>
+  </testcase>
+  <testcase name="testShutdownServiceCreation" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.623144037Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.623178675Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.623195812Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.623211294Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.623229012Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.623242787Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+]]></system-out>
+  </testcase>
+  <testcase name="testGracefulShutdownHandlerCreation" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.623781418Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.623815311Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.623833251Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.623848435Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.623864160Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.623877735Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+]]></system-out>
+  </testcase>
+  <testcase name="testDoubleShutdown" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.0">
+    <system-out><![CDATA[[2025-11-06T02:47:45.624375950Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.624408607Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.624425519Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.624443813Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.624459973Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.624476907Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.624559565Z] [main] [INFO] [ShutdownService] Initiating graceful shutdown with timeout: 1 SECONDS
+[2025-11-06T02:47:45.624583830Z] [main] [INFO] [ThreadController] ThreadController shutdown initiated
+[2025-11-06T02:47:45.624611005Z] [main] [INFO] [ShutdownService] Executor service shutdown initiated
+[2025-11-06T02:47:45.624644740Z] [main] [INFO] [ShutdownService] Awaiting termination with timeout: 1 SECONDS
+[2025-11-06T02:47:45.624663869Z] [main] [INFO] [ShutdownService] Executor service terminated successfully
+[2025-11-06T02:47:45.624696605Z] [main] [INFO] [ResourceCleanupService] Cleaning up 0 registered resources
+[2025-11-06T02:47:45.624726293Z] [main] [INFO] [ResourceCleanupService] Cleaned up 0 out of 0 resources
+[2025-11-06T02:47:45.624750404Z] [main] [INFO] [ShutdownService] Graceful shutdown completed. Terminated: true
+[2025-11-06T02:47:45.624770023Z] [main] [WARN] [ShutdownService] Shutdown already initiated
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskCompletionTracker" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.625204362Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.625237379Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.625254173Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.625270737Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.625285980Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.625301573Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.625371693Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.625537980Z] [main] [DEBUG] [TaskCompletionTracker] Registered task for tracking: task-1
+[2025-11-06T02:47:45.625577470Z] [main] [DEBUG] [TaskCompletionTracker] Marked task as completed: task-1. Previous status: RUNNING
+[2025-11-06T02:47:45.625757818Z] [main] [DEBUG] [TaskCompletionTracker] Registered task for tracking: task-2
+[2025-11-06T02:47:45.625794574Z] [main] [DEBUG] [TaskCompletionTracker] Marked task as failed: task-2. Error: Test error
+]]></system-out>
+  </testcase>
+  <testcase name="testTaskSubmissionGuard" classname="com.example.threadcontroller.service.ShutdownServiceTest" time="0.001">
+    <system-out><![CDATA[[2025-11-06T02:47:45.626639771Z] [main] [INFO] [ThreadController] Created new ThreadController with configuration: ThreadPoolConfiguration{corePoolSize=10, maximumPoolSize=20, keepAliveTime=60, timeUnit=SECONDS, threadType=PLATFORM}
+[2025-11-06T02:47:45.626677368Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.626694742Z] [main] [INFO] [ShutdownService] Created ShutdownService
+[2025-11-06T02:47:45.626710782Z] [main] [INFO] [ResourceCleanupService] Created ResourceCleanupService
+[2025-11-06T02:47:45.626725116Z] [main] [INFO] [TaskCompletionTracker] Created TaskCompletionTracker
+[2025-11-06T02:47:45.626740273Z] [main] [INFO] [GracefulShutdownHandler] Created GracefulShutdownHandler
+[2025-11-06T02:47:45.626966545Z] [main] [INFO] [TaskSubmissionGuard] Created TaskSubmissionGuard for component: TestComponent
+[2025-11-06T02:47:45.627313159Z] [main] [INFO] [TaskSubmissionGuard] Shutdown initiated for component: TestComponent
+[2025-11-06T02:47:45.627356439Z] [main] [DEBUG] [TaskSubmissionGuard] Task submission is not allowed for component: TestComponent
+[2025-11-06T02:47:45.627454452Z] [main] [WARN] [TaskSubmissionGuard] Cannot submit task: TestComponent has been shut down
+[2025-11-06T02:47:45.627505549Z] [main] [INFO] [TaskSubmissionGuard] Reset shutdown guard for component: TestComponent
+]]></system-out>
+  </testcase>
+</testsuite>
